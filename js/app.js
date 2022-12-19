@@ -1,5 +1,7 @@
 
-allCountries();
+document.addEventListener('DOMContentLoaded', () => {
+    allCountries();
+})
 
 async function allCountries(){
     const main = document.querySelector('main');
