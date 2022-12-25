@@ -18,20 +18,20 @@ async function allCountries(){
 
     darkModeChange.addEventListener('click', (e) => {
         if(e.target.id === 'mode'){
+            const main = document.querySelector('main');
+            const body = document.querySelector('body');
+            const header = document.querySelector('header');
+            const inputSearch = document.querySelector('.input-search');
+            const search = document.querySelector('#search');
+            const filter = document.querySelector('#filter');
+            const dropdown = document.querySelector('.menu');
+            const boxCountry = document.querySelectorAll('.box-country');
+            const icon = document.querySelectorAll('.icon');
+            const btnBack = document.querySelector('.btn-back');
+            const border = document.querySelectorAll('.bdc-name');
+
             darkMode ? darkMode = false : darkMode = true;
-            if(darkMode){
-                const main = document.querySelector('main');
-                const body = document.querySelector('body');
-                const header = document.querySelector('header');
-                const inputSearch = document.querySelector('.input-search');
-                const search = document.querySelector('#search');
-                const filter = document.querySelector('#filter');
-                const dropdown = document.querySelector('.menu');
-                const boxCountry = document.querySelectorAll('.box-country');
-                const icon = document.querySelectorAll('.icon');
-                const btnBack = document.querySelector('.btn-back');
-                const border = document.querySelectorAll('.bdc-name');
-                
+            if(darkMode){                
                 main.classList.add('dark');
                 body.classList.add('dark');
                 header.classList.add('dark');
@@ -45,18 +45,6 @@ async function allCountries(){
                 if(border) border.forEach( borderColor => borderColor.classList.add('dark'));
 
             } else{
-                const main = document.querySelector('main');
-                const body = document.querySelector('body');
-                const header = document.querySelector('header');
-                const inputSearch = document.querySelector('.input-search');
-                const search = document.querySelector('#search');
-                const filter = document.querySelector('#filter');
-                const dropdown = document.querySelector('.menu');
-                const boxCountry = document.querySelectorAll('.box-country');
-                const icon = document.querySelectorAll('.icon');
-                const btnBack = document.querySelector('.btn-back');
-                const border = document.querySelectorAll('.bdc-name');
-                
                 main.classList.remove('dark');
                 body.classList.remove('dark');
                 header.classList.remove('dark');
