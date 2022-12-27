@@ -230,14 +230,18 @@ async function allCountries(){
             <div class="content-cci">
                 <div class="name-cci">${countryResult.name}</div>
                 <div class="info-cci">
-                    <div class="native-name-cci"><span class="info-title">Native Name:</span> ${countryResult.nativeName}</div>
-                    <div class="population-cci"><span class="info-title">Population:</span> ${countryResult.population}</div>
-                    <div class="region-cci"><span class="info-title">Region:</span> ${countryResult.region}</div>
-                    <div class="seb-region-cci"><span class="info-title">Sub Region:</span> ${countryResult.subregion}</div>
-                    <div class="capital-cci"><span class="info-title">Capital:</span> ${countryResult.subregion}</div>
-                    <div class="top-level-domain"><span class="info-title">Top Level Domain:</span> ${countryResult.capital}</div>
-                    <div class="currencies-cci"><span class="info-title">Currencies:</span> ${corrunciesString}</div>
-                    <div class="languages"><span class="info-title">Languages:</span> ${languagesString}</div>
+                    <div class="content-info-cci" id="one">
+                        <div class="cci" id="native-name-cci"><span class="info-title">Native Name:</span> ${countryResult.nativeName}</div>
+                        <div class="cci" id="population-cci"><span class="info-title">Population:</span> ${countryResult.population}</div>
+                        <div class="cci" id="region-cci"><span class="info-title">Region:</span> ${countryResult.region}</div>
+                        <div class="cci" id="seb-region-cci"><span class="info-title">Sub Region:</span> ${countryResult.subregion}</div>
+                    </div>
+                    <div class="content-info-cci" id="two">
+                        <div class="capital-cci"><span class="info-title">Capital:</span> ${countryResult.subregion}</div>
+                        <div class="top-level-domain"><span class="info-title">Top Level Domain:</span> ${countryResult.capital}</div>
+                        <div class="currencies-cci"><span class="info-title">Currencies:</span> ${corrunciesString}</div>
+                        <div class="languages"><span class="info-title">Languages:</span> ${languagesString} ${languagesString} ${languagesString}</div>
+                    </div>
                 </div>
                 <div class="bd-countries">
                     <span id="bdc-title" class="info-title">Border Countries:</span>
