@@ -232,7 +232,7 @@ async function allCountries(){
                 <div class="info-cci">
                     <div class="content-info-cci" id="one">
                         <div class="cci" id="native-name-cci"><span class="info-title">Native Name:</span> ${countryResult.nativeName}</div>
-                        <div class="cci" id="population-cci"><span class="info-title">Population:</span> ${countryResult.population}</div>
+                        <div class="cci" id="population-cci"><span class="info-title">Population:</span> ${countryResult.population.toLocaleString('es-MX')}</div>
                         <div class="cci" id="region-cci"><span class="info-title">Region:</span> ${countryResult.region}</div>
                         <div class="cci" id="seb-region-cci"><span class="info-title">Sub Region:</span> ${countryResult.subregion}</div>
                     </div>
